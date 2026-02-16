@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: black;
     color: white;
     padding: 6rem 0;
-    height: 100dvh;
+    height: 120vh;
 }
 .faq__header{
     text-align: center;
@@ -669,13 +669,19 @@ h1, h2, h3, h4, h5, h6 {
         width: 400px;
         height: 400px;
     }
-
+    .new__showcase p{
+        font-weight: 900;
+        font-size: 4rem;
+    }
     /* Bestseller */
     .bestseller__content{
         padding: 0 7.5rem;
     }
     .bestseller__video{
         height: 450px;
+    }
+    .bestseller__video-title{
+        font-size: 4rem;
     }
 
     /* Collection */
