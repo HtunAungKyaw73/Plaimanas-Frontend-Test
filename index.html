@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLAIMANAS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body__wrapper">
+    <header class="header__menu">
+      <div class="menu">
+        <div class="menu__price-toggle">
+          <select
+            name="currency"
+            id="currency-select"
+            class="menu__price-select"
+          >
+            <option value="th">TH - THB</option>
+            <option value="us">US - USD</option>
+          </select>
+        </div>
+        <div class="menu__nav">
+          <button class="menu__toggle-btn">
+            <svg
+              id="menu-icon"
+              width="20"
+              height="9"
+              viewBox="0 0 20 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0.5H20" stroke="black" />
+              <path d="M0 8.5H20" stroke="black" />
+            </svg>
+          </button>
+        </div>
+        <nav class="menu__desktop">
+          <ul class="menu__desktop-list">
+            <li class="menu__item"><a href="#">Women</a></li>
+            <li class="menu__item"><a href="#">Collections</a></li>
+            <li class="menu__item menu__item--editorial">
+              <a href="#">Editorial</a>
+            </li>
+            <li class="menu__item"><a href="#">News</a></li>
+            <li class="menu__item"><a href="#">Stories</a></li>
+          </ul>
+          <ul class="menu__desktop-list menu__desktop--hover">
+            <li class="menu__desktop-item">
+              <a href="#">Editorial</a>
+              <ul class="menu__desktop-sublist">
+                <li class="menu__desktop-subitem"><a href="#">a.s.c</a></li>
+                <li class="menu__desktop-subitem"><a href="#">bazaar</a></li>
+                <li class="menu__desktop-subitem"><a href="#">elle</a></li>
+                <li class="menu__desktop-subitem"><a href="#">gq</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__sign-in">
+          <a class="sign-in__btn" href="#">Sign In</a>
+          <svg
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.3333 7.08333V4.25C11.3333 3.49855 11.0348 2.77788 10.5035 2.24653C9.97212 1.71518 9.25145 1.41666 8.5 1.41666C7.74855 1.41666 7.02788 1.71518 6.49653 2.24653C5.96518 2.77788 5.66667 3.49855 5.66667 4.25V7.08333M2.125 4.95833V12.75C2.125 13.5014 2.42351 14.2221 2.95486 14.7535C3.48622 15.2848 4.20689 15.5833 4.95833 15.5833H12.0417C12.7931 15.5833 13.5138 15.2848 14.0451 14.7535C14.5765 14.2221 14.875 13.5014 14.875 12.75V4.95833H2.125Z"
+              stroke="black"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav class="menu__navbar">
+        <ul class="menu__list menu__list--mobile">
+          <li class="menu__item"><a href="#">Women</a></li>
+          <li class="menu__item"><a href="#">Collections</a></li>
+          <li class="menu__item">
+            <div class="menu__submenu">
+              <a href="#">Editorial</a>
+              <svg
+                width="9"
+                height="6"
+                viewBox="0 0 9 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.33008 6L8.66021 0H-4.91142e-05L4.33008 6Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <ul class="menu__sublist">
+              <li class="menu__subitem"><a href="#">a.s.c</a></li>
+              <li class="menu__subitem"><a href="#">bazaar</a></li>
+              <li class="menu__subitem"><a href="#">elle</a></li>
+              <li class="menu__subitem"><a href="#">gq</a></li>
+              <li class="menu__subitem"><a href="#">l'official thailand</a></li>
+              <li class="menu__subitem"><a href="#">numero</a></li>
+              <li class="menu__subitem"><a href="#">vogue</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#">News</a></li>
+          <li class="menu__item"><a href="#">Stories</a></li>
+        </ul>
+        <div class="menu__logo">
+          <svg
+            viewBox="0 0 378 39"
+            width="100%"
+            height="100%"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M365.894 27.404C365.894 26.5373 365.512 25.844 364.75 25.324C363.987 24.7693 362.739 24.3707 361.006 24.128L354.35 23.14C349.219 22.3427 345.475 21.008 343.118 19.136C340.795 17.264 339.634 14.6987 339.634 11.44C339.634 7.83467 341.263 5.02667 344.522 3.016C347.815 1.00533 352.339 0 358.094 0C368.736 0 374.699 3.72667 375.982 11.18L365.321 12.22C364.767 10.6947 363.9 9.60267 362.722 8.944C361.543 8.25067 359.879 7.904 357.73 7.904C355.442 7.904 353.674 8.18133 352.426 8.736C351.212 9.29067 350.606 10.088 350.606 11.128C350.606 11.9947 350.935 12.6533 351.594 13.104C352.252 13.5547 353.466 13.9187 355.234 14.196L363.346 15.496C368.164 16.2587 371.648 17.5587 373.798 19.396C375.947 21.1987 377.022 23.7467 377.022 27.04C377.022 30.992 375.427 33.9733 372.238 35.984C369.048 37.9947 364.351 39 358.146 39C345.943 39 339.443 34.6667 338.646 26H349.67C350.328 29.3973 353.171 31.096 358.198 31.096C363.328 31.096 365.894 29.8653 365.894 27.404Z"
+              fill="black"
+            />
+            <path
+              d="M302.786 38.064H291.398L307.518 0.936035H320.622L336.742 38.064H325.094L322.338 31.304H305.386L302.786 38.064ZM313.914 9.41204L308.61 22.984H319.218L313.914 9.41204Z"
+              fill="black"
+            />
+            <path
+              d="M247.508 0.936035H257.492L276.056 23.244V0.936035H286.664V38.064H276.68L258.116 15.756V38.064H247.508V0.936035Z"
+              fill="black"
+            />
+            <path
+              d="M208.841 38.064H197.453L213.573 0.936035H226.677L242.797 38.064H231.149L228.393 31.304H211.441L208.841 38.064ZM219.969 9.41204L214.665 22.984H225.273L219.969 9.41204Z"
+              fill="black"
+            />
+            <path
+              d="M145.235 0.936035H157.923L169.103 26.052L180.231 0.936035H192.659V38.064H182.363V16.432L172.951 38.064H164.735L155.375 16.536V38.064H145.235V0.936035Z"
+              fill="black"
+            />
+            <path
+              d="M125.582 0.936035H136.814V38.064H125.582V0.936035Z"
+              fill="black"
+            />
+            <path
+              d="M86.9149 38.064H75.5269L91.6469 0.936035H104.751L120.871 38.064H109.223L106.467 31.304H89.5149L86.9149 38.064ZM98.0429 9.41204L92.7389 22.984H103.347L98.0429 9.41204Z"
+              fill="black"
+            />
+            <path
+              d="M41.4375 0.936035H52.6695V28.964H73.7815L72.6375 38.064H41.4375V0.936035Z"
+              fill="black"
+            />
+            <path
+              d="M0 0.936035H18.46C29.588 0.936035 35.152 5.21737 35.152 13.78C35.152 18.1827 33.7133 21.4414 30.836 23.556C27.9933 25.636 23.66 26.676 17.836 26.676H10.868V38.064H0V0.936035ZM24.232 13.728C24.232 12.1334 23.712 10.9894 22.672 10.296C21.632 9.6027 19.9853 9.25604 17.732 9.25604H10.868V18.356H17.628C19.8813 18.356 21.5453 18.0094 22.62 17.316C23.6947 16.6227 24.232 15.4267 24.232 13.728Z"
+              fill="black"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main id="home">
+      <section class="hero">
+        <div class="hero__logo">
+          <svg
+            viewBox="0 0 378 39"
+            width="100%"
+            height="100%"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M365.894 27.404C365.894 26.5373 365.512 25.844 364.75 25.324C363.987 24.7693 362.739 24.3707 361.006 24.128L354.35 23.14C349.219 22.3427 345.475 21.008 343.118 19.136C340.795 17.264 339.634 14.6987 339.634 11.44C339.634 7.83467 341.263 5.02667 344.522 3.016C347.815 1.00533 352.339 0 358.094 0C368.736 0 374.699 3.72667 375.982 11.18L365.322 12.22C364.767 10.6947 363.9 9.60267 362.722 8.944C361.543 8.25067 359.879 7.904 357.73 7.904C355.442 7.904 353.674 8.18133 352.426 8.736C351.212 9.29067 350.606 10.088 350.606 11.128C350.606 11.9947 350.935 12.6533 351.594 13.104C352.252 13.5547 353.466 13.9187 355.234 14.196L363.346 15.496C368.164 16.2587 371.648 17.5587 373.798 19.396C375.947 21.1987 377.022 23.7467 377.022 27.04C377.022 30.992 375.427 33.9733 372.238 35.984C369.048 37.9947 364.351 39 358.146 39C345.943 39 339.443 34.6667 338.646 26H349.67C350.328 29.3973 353.171 31.096 358.198 31.096C363.328 31.096 365.894 29.8653 365.894 27.404Z"
+              fill="white"
+            />
+            <path
+              d="M302.786 38.064H291.398L307.518 0.93602H320.622L336.742 38.064H325.094L322.338 31.304H305.386L302.786 38.064ZM313.914 9.41202L308.61 22.984H319.218L313.914 9.41202Z"
+              fill="white"
+            />
+            <path
+              d="M247.508 0.93602H257.492L276.056 23.244V0.93602H286.664V38.064H276.68L258.116 15.756V38.064H247.508V0.93602Z"
+              fill="white"
+            />
+            <path
+              d="M208.841 38.064H197.453L213.573 0.93602H226.677L242.797 38.064H231.149L228.393 31.304H211.441L208.841 38.064ZM219.969 9.41202L214.665 22.984H225.273L219.969 9.41202Z"
+              fill="white"
+            />
+            <path
+              d="M145.235 0.93602H157.923L169.103 26.052L180.231 0.93602H192.659V38.064H182.363V16.432L172.951 38.064H164.735L155.375 16.536V38.064H145.235V0.93602Z"
+              fill="white"
+            />
+            <path
+              d="M125.582 0.93602H136.814V38.064H125.582V0.93602Z"
+              fill="white"
+            />
+            <path
+              d="M86.9149 38.064H75.5269L91.6469 0.93602H104.751L120.871 38.064H109.223L106.467 31.304H89.5149L86.9149 38.064ZM98.0429 9.41202L92.7389 22.984H103.347L98.0429 9.41202Z"
+              fill="white"
+            />
+            <path
+              d="M41.4375 0.93602H52.6695V28.964H73.7815L72.6375 38.064H41.4375V0.93602Z"
+              fill="white"
+            />
+            <path
+              d="M0 0.93602H18.46C29.588 0.93602 35.152 5.21735 35.152 13.78C35.152 18.1827 33.7133 21.4414 30.836 23.556C27.9933 25.636 23.66 26.676 17.836 26.676H10.868V38.064H0V0.93602ZM24.232 13.728C24.232 12.1334 23.712 10.9894 22.672 10.296C21.632 9.60269 19.9853 9.25602 17.732 9.25602H10.868V18.356H17.628C19.8813 18.356 21.5453 18.0094 22.62 17.316C23.6947 16.6227 24.232 15.4267 24.232 13.728Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <div class="hero__video">
+          <video autoplay muted loop playsinline>
+            <source src="./asset/video/mockup_video576.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="new margin-y">
+        <div class="new__content">
+          <div class="new__showcase">
+            <p>New</p>
+          </div>
+          <div class="new__info">
+            <h2 class="new__title">
+              Sed egestas, nibh a condimentum imperdiet
+            </h2>
+            <p class="new__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bestseller margin-y">
+        <div class="container bestseller__content">
+          <div class="bestseller__video">
+            <h2 class="bestseller__video-title">Bestseller</h2>
+          </div>
+          <div class="bestseller__info">
+            <h3 class="bestseller__title">
+              Sed egestas, nibh a condimentum imperdiet
+            </h3>
+            <p class="bestseller__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="collection margin-y">
+        <div class="container collection__content">
+          <div class="collection__item collection__item-one">Collection 01</div>
+          <div class="collection__item collection__item--grid">
+            <div class="collection__item collection__item-two">
+              Collection 02
+            </div>
+            <div class="collection__item collection__item-three">
+              Collection 03
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="marquee margin-y">
+        <div class="marquee__content">
+          <p class="marquee__text">New Arrival</p>
+          <svg
+            class="marquee__arraw"
+            width="85"
+            height="85"
+            viewBox="0 0 85 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z"
+              fill="white"
+            />
+          </svg>
+          <p class="marquee__text">Best Selling</p>
+          <svg
+            class="marquee__arraw"
+            width="85"
+            height="85"
+            viewBox="0 0 85 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z"
+              fill="white"
+            />
+          </svg>
+          <p class="marquee__text">New Arrival</p>
+          <svg
+            class="marquee__arraw"
+            width="85"
+            height="85"
+            viewBox="0 0 85 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z"
+              fill="white"
+            />
+          </svg>
+          <p class="marquee__text">Best Selling</p>
+          <svg
+            class="marquee__arraw"
+            width="85"
+            height="85"
+            viewBox="0 0 85 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.1667 38.9583V46.0416H56.6667V53.1249H63.75V46.0416H70.8334V38.9583H63.75V31.8749H56.6667V38.9583H14.1667ZM49.5834 24.7916H56.6667V31.8749H49.5834V24.7916ZM49.5834 24.7916H42.5V17.7083H49.5834V24.7916ZM49.5834 60.2083H56.6667V53.1249H49.5834V60.2083ZM49.5834 60.2083H42.5V67.2916H49.5834V60.2083Z"
+              fill="white"
+            />
+          </svg>
+          <p class="marquee__text">New Arrival</p>
+          <svg
+            class="marquee__arraw"
+            width="85"
+            height="85"
+            viewBox="0 0 85 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M70.8334 38.9583V46.0416H28.3334V53.1249H21.2501V46.0416H14.1667V38.9583H21.2501V31.8749H28.3334V38.9583H70.8334ZM35.4167 24.7916H28.3334V31.8749H35.4167V24.7916ZM35.4167 24.7916H42.5001V17.7083H35.4167V24.7916ZM35.4167 60.2083H28.3334V53.1249H35.4167V60.2083ZM35.4167 60.2083H42.5001V67.2916H35.4167V60.2083Z"
+              fill="white"
+            />
+          </svg>
+          <p class="marquee__text">Best Selling</p>
+        </div>
+      </section>
+      <section class="service margin-y">
+        <div class="container service__content">
+          <div class="service__item">
+            <h3 class="service__title">Worldwide Shipping</h3>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+          <div class="service__item">
+            <h3 class="service__title">Customer Service</h3>
+            <p class="service__description">
+              <span>Lorem ipsum dolor sit amet</span>, consectetur adipiscing
+              elit. Nam ornare, nisl non rhoncus commodo, turpis elit ultricies
+              justo, vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+          <div class="service__item">
+            <h3 class="service__title">Secure Payment</h3>
+            <p class="service__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo, turpis elit ultricies justo,
+              vitae molestie quam justo ut lacus. Proin vitae
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="faq margin-y">
+        <div class="faq__content container">
+          <header class="faq__header">
+            <h2 class="faq__title">Frequently Asked Questions</h2>
+            <p class="faq__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo.
+            </p>
+          </header>
+          <nav class="faq__categories">
+            <button class="faq__category-btn">Orders</button>
+            <button class="faq__category-btn">Shipping</button>
+            <button class="faq__category-btn faq__category-btn--active">
+              Returns & Exchanges
+            </button>
+            <button class="faq__category-btn">Sizing & Products</button>
+          </nav>
+          <div class="faq__accordion">
+            <div class="accordion__item">
+              <button class="accordion__question" aria-expanded="false">
+                <span class="accordion__question-text"
+                  >What Is Your Return Policy?</span
+                >
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion__answer">
+                <p class="accordion__answer-text">
+                  Items can be returned within 14 days of receipt, provided they
+                  are unworn, unwashed, and in original condition with tags
+                  attached.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__question" aria-expanded="false">
+                <span class="accordion__question-text"
+                  >Can I Exchange For A Different Size?</span
+                >
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion__answer">
+                <p class="accordion__answer-text">
+                  Yes, you can exchange for a different size within 14 days.
+                  Please contact our customer service team to arrange the
+                  exchange.
+                </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__question" aria-expanded="false">
+                <span class="accordion__question-text"
+                  >Are Sale Items Refundable?</span
+                >
+                <svg
+                  class="accordion__icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="accordion__answer">
+                <p class="accordion__answer-text">
+                  Sale items are final sale and cannot be returned or exchanged
+                  unless the item is defective.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inquiry margin-y">
+        <div class="container inquiry__content">
+          <header class="inquiry__header">
+            <h2 class="inquiry__title">Make an Inquiry</h2>
+            <p class="inquiry__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              ornare, nisl non rhoncus commodo.
+            </p>
+          </header>
+          <form class="inquiry__form" id="inquiryForm">
+            <div class="inquiry__radio-group">
+              <label class="inquiry__radio-label">
+                <input
+                  type="radio"
+                  name="inquiry-type"
+                  value="onsite"
+                  class="inquiry__radio-input"
+                  checked
+                />
+                <span class="inquiry__radio-text">Onsite</span>
+              </label>
+              <label class="inquiry__radio-label">
+                <input
+                  type="radio"
+                  name="inquiry-type"
+                  value="hybrid"
+                  class="inquiry__radio-input"
+                />
+                <span class="inquiry__radio-text">Hybrid</span>
+              </label>
+            </div>
+            <div class="inquriy__field--grid">
+              <div class="inquiry__field">
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  class="inquiry__input"
+                  placeholder=" "
+                  autocomplete="on"
+                  required
+                />
+                <label for="fullName" class="inquiry__label">Full name*</label>
+              </div>
+              <div class="inquiry__field">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="on"
+                  class="inquiry__input"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="inquiry__label">Email*</label>
+              </div>
+              <div class="inquiry__field">
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="on"
+                  class="inquiry__input"
+                  placeholder=" "
+                  required
+                />
+                <label for="phone" class="inquiry__label">Phone Number*</label>
+              </div>
+              <div class="inquiry__field">
+                <select
+                  id="subject"
+                  name="subject"
+                  class="inquiry__select"
+                  required
+                >
+                  <option value="" disabled selected></option>
+                  <option value="general">General Inquiry</option>
+                  <option value="order">Order Issue</option>
+                  <option value="return">Return & Exchange</option>
+                  <option value="sizing">Sizing Question</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="subject" class="inquiry__select-label"
+                  >Select Subject*</label
+                >
+
+                <svg
+                  class="inquiry__select-icon"
+                  width="12"
+                  height="7"
+                  viewBox="0 0 12 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.336426 0.370117L5.83643 5.37012L11.3364 0.370117"
+                    stroke="black"
+                    stroke-opacity="0.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="inquiry__checkbox-wrapper">
+              <label class="inquiry__checkbox-label">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  class="inquiry__checkbox-input"
+                  required
+                />
+                <span class="inquiry__checkbox-text"
+                  >I agree to all terms & conditions</span
+                >
+              </label>
+            </div>
+            <button type="submit" class="inquiry__submit-btn">Send</button>
+          </form>
+        </div>
+      </section>
+      <section class="container inquiry__home-link-wrapper">
+        <a href="#home" class="inquiry__home-link">Homepage</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content container">
+        <div class="footer__wrapper">
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h3 class="footer__heading">About</h3>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Women</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Collections</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Editorial</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Stories</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__heading">Help</h3>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Payment Notification</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Customer Service</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__heading">Social</h3>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Instagram</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Facebook</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__heading">Legal</h3>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Terms & Conditions</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Cookies Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__newsletter">
+            <h3 class="footer__heading">Newsletter</h3>
+            <form class="footer__newsletter-form" id="newsletterForm">
+              <div class="footer__newsletter-field">
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  name="email"
+                  class="footer__newsletter-input"
+                  placeholder=" "
+                  required
+                  autocomplete="on"
+                />
+                <label for="newsletterEmail" class="footer__newsletter-label"
+                  >Email</label
+                >
+              </div>
+              <button type="submit" class="footer__newsletter-submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">©Plaimanas</p>
+          <p class="footer__credit">Web by ::*</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
